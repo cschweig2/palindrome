@@ -1,8 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PalindromeDetector;
+using PalindromesDetector;
 
-namespace PalindromeDetector.TestTools
+namespace PalindromesDetector.TestTools
 {
+  [TestClass]
   public class PalindromeTests
   {
     [TestMethod]
