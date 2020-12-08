@@ -1,7 +1,7 @@
-namespace PalindromeDetector
+namespace PalindromesDetector
 {
-  public class PalindromeDetector
+  public class Palindromes
   {
-
+    
   }
 }
