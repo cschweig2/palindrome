@@ -6,13 +6,9 @@ namespace PalindromesDetector.Models
   {
     public static bool IsPalindrome(string userInput)
     {
-      string[] input = userInput.Split("");
-      string[] reversed = input;
+      char[] input = userInput.ToCharArray();
+      char[] reversed = input;
       Array.Reverse(reversed);
-      foreach(string letter in reversed)
-      {
-          Console.WriteLine(letter.ToString());
-      }
       string joinedArray = String.Concat(reversed);
       if (joinedArray == userInput)
       {
