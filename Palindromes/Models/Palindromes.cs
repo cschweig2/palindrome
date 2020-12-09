@@ -7,8 +7,13 @@ namespace PalindromesDetector.Models
     public static bool IsPalindrome(string userInput)
     {
       string[] input = userInput.Split("");
-      Array.Reverse(input);
-      string joinedArray = String.Concat(input);
+      string[] reversed = input;
+      Array.Reverse(reversed);
+      foreach(string letter in reversed)
+      {
+          Console.WriteLine(letter.ToString());
+      }
+      string joinedArray = String.Concat(reversed);
       if (joinedArray == userInput)
       {
         return true;
@@ -20,3 +25,14 @@ namespace PalindromesDetector.Models
     }
   }
 }
+
+
+      // foreach(char letter in newArray)
+      // {
+      //     Console.WriteLine(letter.ToString());
+      // }
+      // Console.WriteLine(input);
+// foreach(string letter in input)
+// {
+//     Console.WriteLine(letter.ToString());
+// }
